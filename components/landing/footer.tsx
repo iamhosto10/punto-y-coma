@@ -76,7 +76,7 @@ export function Footer() {
 
         <p
           aria-hidden="true"
-          className="font-display mt-16 -mb-[0.18em] text-center text-[clamp(2.5rem,11vw,9rem)] leading-none whitespace-nowrap text-brand"
+          className="font-display mt-16 mb-10 text-center text-[clamp(2.5rem,11vw,9rem)] leading-none whitespace-nowrap text-brand"
         >
           Punto &amp; Coma
         </p>
