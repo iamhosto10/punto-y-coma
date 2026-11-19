@@ -76,9 +76,6 @@ export function Hero() {
               className="object-cover"
             />
           </div>
-          <span className="font-display absolute -top-4 -right-2 -rotate-6 rounded-full border-2 border-ink bg-white px-4 py-2 text-lg shadow-[3px_3px_0_0_var(--ink)]">
-            Pide a domicilio
-          </span>
         </div>
       </div>
     </section>
