@@ -48,7 +48,16 @@ export function Sedes() {
                       <Phone className="size-5" />
                       <span className="sr-only">Teléfono</span>
                     </dt>
-                    <dd>{sede.telefono}</dd>
+                    <dd>
+                      <a
+                        href={sede.whatsappUrl}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="underline decoration-2 underline-offset-4 hover:bg-brand"
+                      >
+                        {sede.telefono}
+                      </a>
+                    </dd>
                   </div>
                 </dl>
                 <a
