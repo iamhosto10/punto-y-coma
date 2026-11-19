@@ -1,9 +1,10 @@
 import Image from "next/image";
-import { MessageCircle, UtensilsCrossed } from "lucide-react";
+import { UtensilsCrossed } from "lucide-react";
 import { InstagramIcon } from "@/components/instagram-icon";
 import { Badge } from "@/components/ui/badge";
 import { site } from "@/lib/site";
-import { btnInk, btnWhite } from "./styles";
+import { btnInk } from "./styles";
+import { WhatsappPicker } from "./whatsapp-picker";
 
 export function Hero() {
   return (
@@ -51,15 +52,7 @@ export function Hero() {
               <UtensilsCrossed className="size-4" />
               Ver menú completo
             </a>
-            <a
-              href={site.contact.whatsappUrl}
-              target="_blank"
-              rel="noopener noreferrer"
-              className={btnWhite}
-            >
-              <MessageCircle className="size-4" />
-              Pedir por WhatsApp
-            </a>
+            <WhatsappPicker />
             <a
               href={site.instagram.url}
               target="_blank"

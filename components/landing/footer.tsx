@@ -10,17 +10,19 @@ export function Footer() {
           <div>
             <h2 className="font-display text-2xl text-brand">Contacto</h2>
             <ul className="mt-4 space-y-3">
-              <li>
-                <a
-                  href={site.contact.whatsappUrl}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="inline-flex items-center gap-2 hover:text-brand"
-                >
-                  <MessageCircle className="size-4" />
-                  {site.contact.whatsappDisplay}
-                </a>
-              </li>
+              {sedes.map((sede) => (
+                <li key={sede.nombre}>
+                  <a
+                    href={sede.whatsappUrl}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="inline-flex items-center gap-2 hover:text-brand"
+                  >
+                    <MessageCircle className="size-4" />
+                    {sede.nombre}: {sede.telefono}
+                  </a>
+                </li>
+              ))}
               <li>
                 <a
                   href={`mailto:${site.contact.email}`}
