@@ -26,7 +26,7 @@ export function Favoritos() {
             className={`${btnInk} mt-8`}
           >
             <UtensilsCrossed className="size-4" />
-            Ver menú completo
+            Pide tu favorito aquí
           </a>
         </div>
 
