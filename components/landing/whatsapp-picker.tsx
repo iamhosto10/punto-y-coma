@@ -1,7 +1,7 @@
 "use client";
 
 import { useId, useRef } from "react";
-import { MapPin, MessageCircle, X } from "lucide-react";
+import { MapPin, X } from "lucide-react";
 import { WhatsappIcon } from "@/components/whatsapp-icon";
 import { sedes } from "@/lib/site";
 import { cn } from "@/lib/utils";
@@ -74,7 +74,7 @@ export function WhatsappPicker({
                     {sede.direccion}
                   </span>
                 </span>
-                <MessageCircle className="size-6 shrink-0" />
+                <WhatsappIcon className="size-6 shrink-0" />
               </a>
             </li>
           ))}
