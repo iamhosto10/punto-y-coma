@@ -41,7 +41,10 @@ export function Sedes() {
                       <Clock className="size-5" />
                       <span className="sr-only">Horario</span>
                     </dt>
-                    <dd>{sede.horario}</dd>
+                    <dd>
+                      {sede.horario}
+                      <span className="block font-bold">{sede.cierre}</span>
+                    </dd>
                   </div>
                   <div className="relative flex gap-3">
                     <dt className="mt-0.5">
