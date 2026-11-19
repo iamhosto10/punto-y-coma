@@ -1,6 +1,7 @@
 import { Mail, MessageCircle } from "lucide-react";
 import { InstagramIcon } from "@/components/instagram-icon";
 import { sedes, site } from "@/lib/site";
+import { WhatsappPicker } from "./whatsapp-picker";
 
 export function Footer() {
   return (
@@ -63,14 +64,11 @@ export function Footer() {
                 </a>
               </li>
               <li>
-                <a
-                  href={site.menuUrl}
-                  target="_blank"
-                  rel="noopener noreferrer"
+                <WhatsappPicker
+                  unstyled
+                  label="Pedir por WhatsApp"
                   className="hover:text-brand"
-                >
-                  Menú completo
-                </a>
+                />
               </li>
             </ul>
           </div>
