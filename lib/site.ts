@@ -39,7 +39,7 @@ export const sedes = [
   {
     nombre: "Mayales",
     direccion: "Mz E1 Casa 14B, Urb. Colombia",
-    horario: "5:00 pm – 11:30 pm",
+    horario: "Sábado a jueves, 5:00 pm – 11:30 pm",
     telefono: "+57 315 663 6124",
     whatsappUrl: "https://wa.me/573156636124",
     mapa: "https://maps.app.goo.gl/sPVB6V6jNwTYK7cd8",
@@ -47,7 +47,7 @@ export const sedes = [
   {
     nombre: "Norte",
     direccion: "Cll 9 # 17-52, San Joaquín",
-    horario: "5:00 pm – 11:30 pm",
+    horario: "Sábado a jueves, 5:00 pm – 11:30 pm",
     telefono: "+57 314 492 3069",
     whatsappUrl: "https://wa.me/573144923069",
     mapa: "https://maps.app.goo.gl/41q46VRP7LAgW5VBA",
