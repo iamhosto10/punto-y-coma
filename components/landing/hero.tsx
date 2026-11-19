@@ -3,7 +3,8 @@ import { UtensilsCrossed } from "lucide-react";
 import { InstagramIcon } from "@/components/instagram-icon";
 import { Badge } from "@/components/ui/badge";
 import { site } from "@/lib/site";
-import { btnInk } from "./styles";
+import { cn } from "@/lib/utils";
+import { btnInk, btnWhite } from "./styles";
 import { WhatsappPicker } from "./whatsapp-picker";
 
 export function Hero() {
@@ -42,22 +43,22 @@ export function Hero() {
             Salchipapas, perros, hamburguesas y asados hechos para compartir.
             Pide a domicilio o visítanos en cualquiera de nuestras dos sedes.
           </p>
-          <div className="mt-10 flex flex-wrap items-center gap-x-4 gap-y-5">
+          <div className="mt-10 flex flex-col gap-4 sm:flex-row sm:flex-wrap sm:items-center">
             <a
               href={site.menuUrl}
               target="_blank"
               rel="noopener noreferrer"
-              className={btnInk}
+              className={cn(btnInk, "w-full sm:w-auto")}
             >
               <UtensilsCrossed className="size-4" />
               Ver menú completo
             </a>
-            <WhatsappPicker />
+            <WhatsappPicker className="w-full sm:w-auto" />
             <a
               href={site.instagram.url}
               target="_blank"
               rel="noopener noreferrer"
-              className="inline-flex items-center gap-2 font-bold underline decoration-2 underline-offset-4"
+              className={cn(btnWhite, "w-full sm:w-auto")}
             >
               <InstagramIcon className="size-5" />
               Instagram

@@ -3,9 +3,10 @@
 import { useRef } from "react";
 import { MapPin, MessageCircle, X } from "lucide-react";
 import { sedes } from "@/lib/site";
+import { cn } from "@/lib/utils";
 import { btnWhite } from "./styles";
 
-export function WhatsappPicker() {
+export function WhatsappPicker({ className }: { className?: string }) {
   const dialogRef = useRef<HTMLDialogElement>(null);
 
   return (
@@ -13,7 +14,7 @@ export function WhatsappPicker() {
       <button
         type="button"
         onClick={() => dialogRef.current?.showModal()}
-        className={btnWhite}
+        className={cn(btnWhite, className)}
       >
         <MessageCircle className="size-4" />
         Pedir por WhatsApp
