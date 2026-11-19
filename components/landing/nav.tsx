@@ -1,5 +1,5 @@
 import Image from "next/image";
-import { site } from "@/lib/site";
+import { WhatsappPicker } from "./whatsapp-picker";
 
 const links = [
   { href: "#favoritos", label: "Favoritos" },
@@ -36,14 +36,11 @@ export function Nav() {
             {link.label}
           </a>
         ))}
-        <a
-          href={site.menuUrl}
-          target="_blank"
-          rel="noopener noreferrer"
+        <WhatsappPicker
+          unstyled
+          label="Pedir ahora"
           className="ml-1 inline-flex h-10 items-center rounded-full bg-ink px-4 text-sm font-bold text-brand"
-        >
-          Pedir ahora
-        </a>
+        />
       </nav>
     </header>
   );

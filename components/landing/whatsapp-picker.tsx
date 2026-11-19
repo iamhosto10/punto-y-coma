@@ -10,9 +10,11 @@ import { btnInk } from "./styles";
 export function WhatsappPicker({
   className,
   label = "Pedir por WhatsApp",
+  unstyled = false,
 }: {
   className?: string;
   label?: string;
+  unstyled?: boolean;
 }) {
   const dialogRef = useRef<HTMLDialogElement>(null);
   const titleId = useId();
@@ -22,9 +24,9 @@ export function WhatsappPicker({
       <button
         type="button"
         onClick={() => dialogRef.current?.showModal()}
-        className={cn(btnInk, className)}
+        className={unstyled ? className : cn(btnInk, className)}
       >
-        <WhatsappIcon className="size-5" />
+        {!unstyled && <WhatsappIcon className="size-5" />}
         {label}
       </button>
 
