@@ -1,6 +1,3 @@
-const mapsSearch = (address: string) =>
-  `https://www.google.com/maps/search/?api=1&query=${encodeURIComponent(`${address}, Valledupar`)}`;
-
 export const site = {
   name: "Punto & Coma",
   menuUrl: "https://vinny.vinapp.co/?company=puntoycoma?idPoint%3D1132",
@@ -8,11 +5,8 @@ export const site = {
     url: "https://www.instagram.com/puntoycoma.vpar/",
     handle: "@puntoycoma.vpar",
   },
-  // PENDIENTE: reemplazar estos espacios por los datos reales de contacto
   contact: {
-    whatsappDisplay: "+57 000 000 0000",
-    whatsappUrl: "https://wa.me/570000000000",
-    email: "correo@ejemplo.com",
+    email: "contacto@puntoycoma.app",
   },
 };
 
@@ -45,18 +39,19 @@ export const sedes = [
   {
     nombre: "Mayales",
     direccion: "Mz E1 Casa 14B, Urb. Colombia",
-    // PENDIENTE: horario y teléfono reales de esta sede
+    // PENDIENTE: horario real de esta sede
     horario: "0:00 pm – 0:00 pm",
-    telefono: "+57 000 000 0000",
-    mapa: mapsSearch("Mz E1 Casa 14B Urb Colombia"),
+    telefono: "+57 315 663 6124",
+    whatsappUrl: "https://wa.me/573156636124",
+    mapa: "https://maps.app.goo.gl/sPVB6V6jNwTYK7cd8",
   },
   {
     nombre: "Norte",
     direccion: "Cll 9 # 17-52, San Joaquín",
     horario: "5:00 pm – 10:30 pm",
-    // PENDIENTE: teléfono real de esta sede
-    telefono: "+57 000 000 0000",
-    mapa: mapsSearch("Cll 9 # 17-52 San Joaquín"),
+    telefono: "+57 314 492 3069",
+    whatsappUrl: "https://wa.me/573144923069",
+    mapa: "https://maps.app.goo.gl/41q46VRP7LAgW5VBA",
   },
 ];
 
