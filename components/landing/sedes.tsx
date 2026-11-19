@@ -43,7 +43,7 @@ export function Sedes() {
                     </dt>
                     <dd>{sede.horario}</dd>
                   </div>
-                  <div className="flex gap-3">
+                  <div className="relative flex gap-3">
                     <dt className="mt-0.5">
                       <Phone className="size-5" />
                       <span className="sr-only">Teléfono</span>
@@ -53,7 +53,7 @@ export function Sedes() {
                         href={sede.whatsappUrl}
                         target="_blank"
                         rel="noopener noreferrer"
-                        className="underline decoration-2 underline-offset-4 hover:bg-brand"
+                        className="underline decoration-2 underline-offset-4 after:absolute after:inset-0 hover:bg-brand"
                       >
                         {sede.telefono}
                       </a>
