@@ -1,14 +1,21 @@
 "use client";
 
-import { useRef } from "react";
+import { useId, useRef } from "react";
 import { MapPin, MessageCircle, X } from "lucide-react";
 import { WhatsappIcon } from "@/components/whatsapp-icon";
 import { sedes } from "@/lib/site";
 import { cn } from "@/lib/utils";
 import { btnInk } from "./styles";
 
-export function WhatsappPicker({ className }: { className?: string }) {
+export function WhatsappPicker({
+  className,
+  label = "Pedir por WhatsApp",
+}: {
+  className?: string;
+  label?: string;
+}) {
   const dialogRef = useRef<HTMLDialogElement>(null);
+  const titleId = useId();
 
   return (
     <>
@@ -18,12 +25,12 @@ export function WhatsappPicker({ className }: { className?: string }) {
         className={cn(btnInk, className)}
       >
         <WhatsappIcon className="size-5" />
-        Pedir por WhatsApp
+        {label}
       </button>
 
       <dialog
         ref={dialogRef}
-        aria-labelledby="whatsapp-picker-title"
+        aria-labelledby={titleId}
         onClick={(e) => {
           if (e.target === dialogRef.current) dialogRef.current?.close();
         }}
@@ -31,7 +38,7 @@ export function WhatsappPicker({ className }: { className?: string }) {
       >
         <div className="flex items-start justify-between gap-4">
           <h2
-            id="whatsapp-picker-title"
+            id={titleId}
             className="font-display text-3xl leading-none"
           >
             ¿A qué sede le escribes?

@@ -1,8 +1,7 @@
-import { UtensilsCrossed } from "lucide-react";
 import { Badge } from "@/components/ui/badge";
 import { Card } from "@/components/ui/card";
-import { favoritos, site } from "@/lib/site";
-import { btnInk } from "./styles";
+import { favoritos } from "@/lib/site";
+import { WhatsappPicker } from "./whatsapp-picker";
 
 export function Favoritos() {
   return (
@@ -19,15 +18,7 @@ export function Favoritos() {
             Solo una probadita. El menú completo tiene mucho más, incluidas más
             de 30 adiciones para armarlo a tu gusto.
           </p>
-          <a
-            href={site.menuUrl}
-            target="_blank"
-            rel="noopener noreferrer"
-            className={`${btnInk} mt-8`}
-          >
-            <UtensilsCrossed className="size-4" />
-            Pide tu favorito aquí
-          </a>
+          <WhatsappPicker label="Pide tu favorito aquí" className="mt-8" />
         </div>
 
         <Card className="gap-0 rounded-3xl border-2 border-ink py-0 shadow-[8px_8px_0_0_var(--ink)] ring-0">
