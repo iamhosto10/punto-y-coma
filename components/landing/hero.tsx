@@ -1,10 +1,9 @@
 import Image from "next/image";
-import { UtensilsCrossed } from "lucide-react";
 import { InstagramIcon } from "@/components/instagram-icon";
 import { Badge } from "@/components/ui/badge";
 import { site } from "@/lib/site";
 import { cn } from "@/lib/utils";
-import { btnInk, btnWhite } from "./styles";
+import { btnWhite } from "./styles";
 import { WhatsappPicker } from "./whatsapp-picker";
 
 export function Hero() {
@@ -44,15 +43,6 @@ export function Hero() {
             Pide a domicilio o visítanos en cualquiera de nuestras dos sedes.
           </p>
           <div className="mt-10 flex flex-col gap-4 sm:flex-row sm:flex-wrap sm:items-center">
-            <a
-              href={site.menuUrl}
-              target="_blank"
-              rel="noopener noreferrer"
-              className={cn(btnInk, "w-full sm:w-auto")}
-            >
-              <UtensilsCrossed className="size-4" />
-              Ver menú completo
-            </a>
             <WhatsappPicker className="w-full sm:w-auto" />
             <a
               href={site.instagram.url}
